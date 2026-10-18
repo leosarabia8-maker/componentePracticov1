@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de inventario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <td colspan="4" align="center" bgcolor="#CCC">Control de Inventario</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Precio: </td>
+                <td><input type="number" id="txt-precio"></td>
+                <td>Tope: 6</td>
+                <td>
+                    <button id="btn-agregar-precio">Agregar Precio</button>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <textarea name="" id="txt-listado-precios" placeholder="listado de precios" rows="8" readonly></textarea>
+                </td>
+                <td align="center">
+                    <button id="btn-presentar-precios">Presentar</button>
+                </td>
+                <td align="center">
+                    <button id="btn-cargar-precios">Cargar Precios</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Total Inv. $</td>
+                <td>
+                    <input type="text" placeholder="$0.00" readonly id="txt-total-inventario">
+                </td>
+                <td>
+                    <button id="btn-calcular-total">Calcular Total</button>
+                </td>
+                <td></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
